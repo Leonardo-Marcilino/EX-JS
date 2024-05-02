@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*10) Faça um programa que exiba os primeiros 20 números da sequência de Fibonacci usando o loop "while".*/
+
+        
+        let n = 20;
+
+        let n_anterior = 1;
+        let acumuladora = 0;
+        let n_posterior = 1;
+
+        while (acumuladora < n) {
+
+            acumuladora = n_anterior + n_posterior;
+            if(acumuladora > n){
+                break
+            }
+            document.write(`${n_anterior} + ${n_posterior} = ${acumuladora} <br />`);
+            n_anterior = n_posterior;
+            n_posterior = acumuladora;
+        }
+    </script>
+</body>
+</html>

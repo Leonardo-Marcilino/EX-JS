@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*6. Faça um programa que leia 10 números informados pelo usuário e ao final da leitura escrever a soma total dos 10 números lidos.*/
+
+
+        let n = parseInt(prompt("Insira um número: "));
+        let soma = 0;
+        let contadora_n = 1;
+        let i = 1;
+
+        for(i = 1; i <= 10; i++){
+            document.write("Número" + contadora_n + ": " + n + "<br />");
+            soma = soma + n;
+            contadora_n++
+            n = parseInt(prompt("Insira o próximo número: ")); 
+        }
+
+        document.write("<br />")
+        document.write("A soma total de todos os número é: " + soma);
+
+    </script>
+</body>
+</html

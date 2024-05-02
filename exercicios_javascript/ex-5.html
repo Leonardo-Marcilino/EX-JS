@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        5- Crie um programa em JAVA que leia a idade de uma pessoa e informe a sua classe eleitoral: 
+        • não eleitor (abaixo de 16 anos); 
+        • eleitor obrigatório (entre a faixa de 18 e menor de 65 anos);
+        • eleitor facultativo (de 16 até 18 anos e maior de 65 anos, inclusive).
+*/  
+        let idade = parseInt(prompt("Insira a sua idade:"));
+
+        if(idade < 16){
+            document.write(`sua idade é ${idade}, você não eleitor (abaixo de 16 anos).`);
+        } else if(idade < 65){ 
+            document.write(`sua idade é ${idade}, eleitor obrigatório (entre a faixa de 18 e menor de 65 anos).`);
+        }else{
+            document.write(`sua idade é ${idade}, eleitor facultativo (de 16 até 18 anos e maior de 65 anos, inclusive).`);
+        }
+    </script>
+</body>
+</html>

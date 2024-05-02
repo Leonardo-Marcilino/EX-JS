@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*9- Escreva um programa para ler 2 valores inteiros informados pelo usuário e uma das seguintes operações a serem executadas (codificada da seguinte forma: 1.Adição, 2.Subtração, 3.Divisão, 4.Multiplicação).O programa deve calcular e escrever o resultado dessa operação sobre os dois valores lidos.*/
+
+        let n1 = parseInt(prompt("Insira o 1° número: "));
+        let n2 = parseInt(prompt("Insira o 2° número: "));
+
+        let operacao = prompt("Qual operação você deseja realizar, 1.Adição, 2.Subtração, 3.Divisão, 4.Multiplicação");
+
+        let soma;
+        let sub;
+        let div;
+        let mult;
+
+        switch (operacao) {
+            case "1":
+                soma = n1 + n2;
+                document.write("A soma do número " + n1 + " + " + n2 + " = " + soma);
+                break
+            case "2":
+                sub = n1 - n2;
+                document.write("A subtração do número " + n1 + " - " + n2 + " = " + sub);
+                break
+            case "3":
+                div = n1 / n2;
+                document.write("A divisão do número " + n1 + " / " + n2 + " = " + div);
+                break
+            case "4":
+                mult = n1 * n2;
+                document.write("A multiplicação do número " + n1 + " * " + n2 + " = " + mult);
+                break
+            default:
+                document.write("Error - opção número " + operacao + " não existe, reinicie o programa e tente novamente.");
+        }
+    </script>
+</body>
+
+</html>

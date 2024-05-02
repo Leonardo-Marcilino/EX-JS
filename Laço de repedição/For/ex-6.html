@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+
+/*6) Crie um programa que leia um número inteiro positivo e exiba todos os divisores desse número usando o loop "for".*/
+
+ 
+var n = parseInt(prompt("Digite um número inteiro e positivo: "));
+var divisora = 2;
+var divisores = 0;
+
+/*validação do número inserido pelo usuário*/
+if(n < 1){
+  for(true; true; true){
+    n = parseInt(prompt("O número precisa ser positivo e inteiro: "));
+    if(n > 0){
+      break;
+    }
+  }
+}
+
+var total = n
+document.write("Segue os divisores do " + n + "<br /> <br />");
+
+for(true; n > 1; true){
+  if(n % divisora == 0){
+      document.write(n + "  |  " + divisora + "<br />");
+      n = n / divisora;
+      divisores++;
+  }
+  else{
+      divisora++;
+  }
+}
+document.write(n + "  |  " + "<br /> <br />");
+if(divisores > 1){
+  document.write("O número " + total + " tem " + divisores *   divisores + " divisores");
+}else{
+  document.write("O número " + total + " tem " + divisores *   divisores + " divisor");
+}
+    </script>
+</body>
+</html>

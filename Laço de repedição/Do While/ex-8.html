@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+8) Escreva um programa que leia um número inteiro e exiba a sequência de Fibonacci até o número lido usando o loop "do-while".
+*/
+
+        /*
+        
+        Entrada: 1 número aleátorio;
+
+        Operação: exibir a sequência do fibinacci
+
+        ex: entrada = 21
+
+        sequencia: 1 1 2 3 5 8 13 21
+        operação por tras: 
+        1 + 1 = 2
+            1 + 2 = 3
+                2 + 3 = 5
+                    3 + 5 = 8
+                        5 + 8 = 13
+                            8 + 13 = 21
+
+        Saida: 
+
+        O número escolhido é: n
+
+        sequencia do fibonaci com exemplo de conta
+
+        */
+
+        let n = parseInt(prompt("Insira um número e descubra a sequência de Fibonacci: "));
+
+        let n_anterior = 1;
+        let acumuladora = 0;
+        let n_posterior = 1;
+
+        do{
+            acumuladora = n_anterior + n_posterior;
+            if(acumuladora > n){
+                break
+            }
+            document.write(`${n_anterior} + ${n_posterior} = ${acumuladora} <br />`);
+            n_anterior = n_posterior;
+            n_posterior = acumuladora;
+        }while (acumuladora < n) 
+
+    </script>
+</body>
+
+</html>

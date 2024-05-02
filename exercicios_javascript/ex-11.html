@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        11- Escrever um programa que leia o nome de um vendedor, o seu salário fixo e o total de vendas efetuadas por ele no mês (em dinheiro). Sabendo que este vendedor ganha 15% de comissão sobre suas vendas efetuadas, informar o seu nome, o salário fixo e salário no final do mês. 
+        */
+
+        let nomeVendedor = prompt("Insira seu nome");
+        let salarioFixo = parseFloat(prompt("Insira seu sálario"));
+        let totalVendas = parseFloat(prompt("Insira o total de vendas realizadas no mês em dinheiro"));
+        let comissao = 15 / 100;
+        let salarioComissao = salarioFixo + (totalVendas * comissao);
+
+        document.write(`${nomeVendedor} seu salário fixo é ${salarioFixo} e o salário no final com a comissão fica ${salarioComissao}`);
+
+
+    </script>
+</body>
+</html>

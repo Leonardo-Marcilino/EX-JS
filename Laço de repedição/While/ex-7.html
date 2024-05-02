@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* Faça um programa que leia um número inteiro e exiba se ele é um número primo usando o loop "while".*/
+
+        let n = parseInt(prompt("Digite um número e saiba se ele é primo ou não: "));
+
+        /*
+        
+        Entrada número
+
+        andar do zero até o número para descobrir se ele só pe divisivel por 1 e ele mesmo
+
+
+        Saida: é um número primo ou não é um número primo
+        
+        */
+
+        let divisor = 1;
+        let primo = 0;
+        let i = 1;
+
+        while (i <= n) {
+            if (n % divisor == 0) {
+                if (divisor != 1 && divisor != n) {
+                    document.write("O número " + n + " não é primo");
+                    primo = 1;
+                    break
+                }
+            }
+            divisor++
+            i++
+        }
+        if (primo == 0) {
+            document.write("O número " + n + " é primo");
+
+        }
+
+    </script>
+</body>
+
+</html>

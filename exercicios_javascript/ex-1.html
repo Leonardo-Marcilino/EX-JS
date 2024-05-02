@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <script>
+        /*1-Criar um programa em Java, que informe a quantidade total de calorias de uma refeição a partir do usuário que deverá informar o prato, a sobremesa e a bebida (veja a tabela a seguir). 
+        
+        Sugestão: enumere cada opção de prato, sobremesa e bebida. Ou seja: Prato: 1 - vegetariano, 2 – Peixe, 3 – Frango, 4 – Carne; Sobremesa: 1 – Abacaxi, 2 – Sorvete diet, 3 – Mouse diet, 4 – Mouse chocolate; Bebida: 1 – Chá, 2 - Suco de laranja, 3 – Suco de melão, 4 – Refrigerante diet.
+
+
+        entrada:
+
+        Usuário informa o número do prato, sobremessa e bebida
+
+        operação:
+        calcaular a quantidade total de calorias
+
+        saida:
+        Exibir a quantidade total de calorias de acordo com a escolha do usuário
+        */
+        alert("Escolha o seu prato informando o número dele")
+        let Prato = parseInt(prompt(" Prato: 1 - vegetariano, 2 – Peixe, 3 – Frango, 4 – Carne;"));
+        alert("Agora escolha a sobremessa da mesma maneira");
+        let Sobremesa = parseInt(prompt("Sobremesa: 1 – Abacaxi, 2 – Sorvete diet, 3 – Mouse diet, 4 – Mouse chocolate;"));
+        alert("Agora escolha a bebida");
+        let Bebida = parseInt(prompt("Bebida: 1 – Chá, 2 - Suco de laranja, 3 – Suco de melão, 4 – Refrigerante diet;"));
+
+        let calorita;
+        let calorita_total;
+        let nome_prato; 
+        let nome_sobremesa;
+        let nome_bebida;
+        switch (Prato){
+            case 1:
+                calorita = 180;
+                calorita_total = 180;
+                nome_prato = "Vegetariano";
+            break;
+            case 2:
+                calorita = 230;
+                calorita_total = 230;
+                nome_prato = "Peixe";
+            break;
+            case 3:
+                calorita = 250;
+                calorita_total = 250;
+                nome_prato = "Frango";
+            break;
+            case 4:
+                calorita = 350;
+                calorita_total = 350;
+                nome_prato = "Carne";
+            break;
+        }
+        document.write(`O prato é ${nome_prato} e a quantidade de caloria é de ${calorita} cal <br />`);
+        switch (Sobremesa){
+            case 1:
+                calorita = 75;
+                calorita_total += 75;
+                nome_sobremesa = "Abacaxi";
+            break;
+            case 2:
+                calorita = 110;
+                calorita_total += 110;
+                nome_sobremesa = "Sorvete diet";
+            break;
+            case 3:
+                calorita = 170;
+                calorita_total += 170;
+                nome_sobremesa = "Frango";
+            break;
+            case 4:
+                calorita = 200;
+                calorita_total += 200;
+                nome_sobremesa = "Carne";
+            break;
+        }
+        document.write(`A sobremessa é ${nome_sobremesa} e a quantidade de caloria é de ${calorita} cal <br />`);
+        switch (Bebida){
+            case 1:
+                calorita = 20;
+                calorita_total += 20;
+                nome_bebida = "Chá";
+            break;
+            case 2:
+                calorita = 70;
+                calorita_total += 70;
+                nome_bebida = "Suco de laranja";
+            break;
+            case 3:
+                calorita = 100;
+                calorita_total += 100;
+                nome_bebida = "Suco melão";
+            break;
+            case 4:
+                calorita = 65;
+                calorita_total += 65;
+                nome_bebida = "Refrigerante diet";
+            break;
+        }
+        document.write(`O seu suco é ${nome_bebida} e a quantidade de caloria é de ${calorita} cal <br />`);
+
+        document.write(`O total de calorias da sua refeição é de ${calorita_total}`);
+    </script>
+</body>
+
+</html>

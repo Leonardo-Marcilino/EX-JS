@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*9- Crie um programa que leia o valor do salário mínimo e o valor do salário de um usuário, calcule a quantidade de salários mínimos esse usuário ganha e imprima o resultado. (Salário mínimo = R$1.212,00).*/
+
+        let salarioMinimo = parseInt(prompt("Insira o sálario mínimo"));
+        let salario = parseInt(prompt("Insira seu sálario: "));
+        let soma = 0;
+
+        let qtd = 0;
+
+        while(soma < salario){
+            soma += salarioMinimo;
+            qtd += 1;
+            console.log(soma);
+            
+        }
+        document.write(`A quantidade de salários mínimos que você ganha é de ${qtd}`);
+
+
+
+    </script>
+</body>
+</html>

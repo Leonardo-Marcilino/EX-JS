@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+        /*7. Faça um programa que leia 6 números que o usuário vai informar. Todos os números lidos com valor inferior a 72 devem ser somados. Escreva o valor final da soma efetuada e também todos valores que o usuário informou.  */
+
+        let numero = parseInt(prompt("Insira o primeiro número"));
+        let soma = 0;
+        let contadora_n = 1;
+        let i = 1;
+
+        for(i = 1; i <= 6; i++){
+            if(numero < 72){
+                soma = soma + numero;
+            }
+            document.write(contadora_n + "° número é: " + numero + "<br />");
+            numero = parseInt(prompt("Insira o próximo número"));
+            contadora_n++
+        }
+        document.write("<br />")
+        document.write("A soma de todos os números inferiores a 72 é: " + soma);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*4) Faça um programa que leia 5 números inteiros usando o loop "do-while" e exiba a média aritmética dos valores lidos.*/
+        var i = 1;
+
+        var n = parseFloat(prompt("Insira a nota: "))
+
+        var notas = n
+
+        var total = 0;
+
+         do{
+
+            notas += n;
+
+            n = parseFloat(prompt("Insira a nota: "));
+
+            i++
+
+        }while (i < 5)
+
+        total = notas / i;
+
+        document.write(total)
+    </script>
+</body>
+
+</html>
