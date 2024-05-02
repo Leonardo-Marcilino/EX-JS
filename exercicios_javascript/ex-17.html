@@ -7,20 +7,23 @@
 </head>
 <body>
     <script>
-        // 15- Leia a idade de 20 pessoas e exiba a soma das idades. 
+        //  17- Leia a idade de 20 pessoas e exiba quantas pessoas são maiores de idade. 
 
         let x = 1;
         let y = 20;
         let idade;
-        let somaIdade = 0;
+        let maiorIdade = 0;
 
         while(x <= y){
             idade = parseInt(prompt("Insira a idade da pessoa"));
             document.write(`idade: ${idade} <br />`);
-            somaIdade += idade;
+            if(idade > 18){
+                maiorIdade++
+            }
             x++
         }
-        document.write(`A soma das idade é ${somaIdade}`);
+        document.write(`${maiorIdade} são maiores de idade`);
+
     </script>
 </body>
 </html>

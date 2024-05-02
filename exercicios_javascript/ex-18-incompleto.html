@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 18- Leia o nome e a idade de 10 pessoas e exiba o nome da pessoa mais nova. 
+
+        let x = 1;
+        let y = 4;
+        let idade;
+        let nome;
+        let pessoaNova = 0;
+        let idadeMenor = 0;
+
+        while(x <= y){
+            nome = prompt("Insira seu nome: ");
+            idade = parseInt(prompt("Insira a idade da pessoa: "));
+            if(idadeMenor <= idade){
+                if(idade > idadeMenor){
+                    null
+                }else{
+                    pessoaNova = nome;
+                    idadeMenor = idade;
+                }
+            }
+            document.write(`nome: ${nome} e idade: ${idade} <br />`);
+            x++
+        }
+        document.write(`A pessoa mais nova é ${pessoaNova}`);
+    </script>
+</body>
+</html>

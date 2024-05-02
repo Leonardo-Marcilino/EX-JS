@@ -7,20 +7,22 @@
 </head>
 <body>
     <script>
-        /*14- Escreva um algoritmo que leia 10 números do usuário e calcule a soma desses números. */
+        // 20- Escreva um programa que leia 20 números do usuário e exiba quantos números são maiores do que 8. 
 
         let x = 1;
-        let y = 10;
+        let y = 20;
         let n;
-        let soma = 0;
+        let maiores = 0;
 
         while(x <= y){
-            n = parseInt(prompt("Insira um número"));
+            n = parseInt(prompt("Insira a idade da pessoa"));
             document.write(`número: ${n} <br />`);
-            soma += n;
+            if(n > 8){
+                maiores++
+            }
             x++
         }
-        document.write(`A soma total dos número é ${soma}`);
+        document.write(`${maiores} são maiores que 8`);
     </script>
 </body>
 </html>

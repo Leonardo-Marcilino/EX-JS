@@ -7,20 +7,24 @@
 </head>
 <body>
     <script>
-        // 15- Leia a idade de 20 pessoas e exiba a soma das idades. 
+        // 16- Leia a idade de 20 pessoas e exiba a média das idades. 
 
         let x = 1;
         let y = 20;
         let idade;
         let somaIdade = 0;
+        let mediaIdade = 0;
 
         while(x <= y){
             idade = parseInt(prompt("Insira a idade da pessoa"));
             document.write(`idade: ${idade} <br />`);
             somaIdade += idade;
+            mediaIdade++
             x++
         }
-        document.write(`A soma das idade é ${somaIdade}`);
+        mediaIdade = somaIdade / mediaIdade;
+        document.write(`A soma das idade é ${somaIdade} e a media delas é ${mediaIdade}`);
+
     </script>
 </body>
 </html>
